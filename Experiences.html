@@ -8,24 +8,7 @@
 	<title>Bo Niu's Experiences</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<style>
 
-		#box{
-			background:#333;
-			color:#fff;
-			width:500px;
-			height:90px;
-			padding:40px;
-			text-align:center;
-		}
-
-		#box2{
-			background:red;
-			width:100px;
-			height:100px;
-			position:relative;
-		}
-	</style>
 </head>
 <body>
 	<header id="main-header">
@@ -39,6 +22,7 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="Experiences.html">Experiences</a></li>
 				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -51,8 +35,48 @@
         <hr>
 
         <div id="eduDiv">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis unde itaque molestiae ipsum consequatur eaque fugit obcaecati quia nam quasi debitis autem, ad odit ab quam, nihil inventore ratione.
+            <div><strong>Master of Science in Computer Science  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Sep. 2019 – May. 2021 (Expected)</strong></div>
+            <div>Northeastern University (Khoury College of Computer Sciences), Seattle, WA, US. GPA: 3.83</div>
+            <div><strong>Master of Science in Petroleum Engineering  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Aug. 2015 – Sep. 2017</strong></div>
+            <div>Norwegian University of Science and Technology (NTNU), Trondheim, Norway</div>
+            <div><strong>Bachelor of Engineering in Petroleum Engineering  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Sep. 2011 – Jun. 2015</strong></div>
+            <div>China University of Petroleum (East China), Qingdao, Shandong, China</div>
         </div>
+
+        <div class="wrap">
+            <div class="box"><h1>Skills</h1></div>
+            <div class="box"><button class="experienceHeaderBtn" id="skillHideBtn"><span>Hide</span></button></div>
+        </div>
+        <hr>
+
+        <div class="flexDiv" id="skillDiv">
+            <section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+					<li itemprop="itemListElement">HTML5/CSS3</li>
+					<li itemprop="itemListElement">JavaScript &amp; jQuery</li>
+					<li itemprop="itemListElement">Node.js Backend</li>
+					<li itemprop="itemListElement">MySQL & MongoDB</li>
+					<li itemprop="itemListElement">React</li>
+					<li itemprop="itemListElement">Python for AI & ML</li>
+                    <li itemprop="itemListElement">C++ for Desktop Application Development</li>
+                    <li itemprop="itemListElement">Java</li>
+				</ul>
+			</section>
+			
+			<section id="skills-right">
+				<h4 itemprop="about">Software and Other</h4>
+				<ul>
+					<li itemprop="itemListElement">Visual Studio Code</li>
+					<li itemprop="itemListElement">Python Jupyter Notebook</li>
+                    <li itemprop="itemListElement">Visual Studio</li>
+                    <li itemprop="itemListElement">Intellij IDEA</li>
+                    <li itemprop="itemListElement">Linux</li>
+                    <li itemprop="itemListElement">Git</li>
+				</ul>
+			</section>
+        </div>
+
 
         <div class="wrap">
             <div class="box"><h1>Work Experience</h1></div>
@@ -73,48 +97,10 @@
         <div id="projDiv">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem at ipsam voluptates nam magni temporibus sed quisquam error expedita, ab iure, praesentium nulla accusamus labore commodi! Illum, minus id!
         </div>
-
-		<button id="btnFadeOut">Fade Out</button>
-		<button id="btnFadeIn">Fade In</button>
-		<button id="btnFadeTog">Fade Toggle</button>
-
-		<hr>
-
-		<button id="btnSlideUp">Slide Up</button>
-		<button id="btnSlideDown">SlideDown</button>
-		<button id="btnSlideTog">Slide Toggle</button>
-		<button id="btnStop">Stop</button>
-		<hr>
-
-		<div id="box"><h1>Hello World</h1></div>
-
-		<hr>
-
-		<button id="moveLeft">Move Left</button>
-		<button id="moveRight">Move Right</button>
-		<button id="moveAround">Move Around</button>
-		<div id="box2"></div>
 	</div>
 
 	<script>
 		$(document).ready(function(){
-			// $('#btnFadeOut').click(function(){
-			// 	$('#box').fadeOut(3000, function(){
-			// 		$('#btnFadeOut').text('Its Gone');
-			// 	});
-			// });
-			// $('#btnFadeIn').click(function(){
-			// 	$('#box').fadeIn(3000);
-			// });
-			// $('#btnFadeTog').click(function(){
-			// 	$('#box').fadeToggle(1000);
-			// });
-			// $('#btnSlideDown').click(function(){
-			// 	$('#box').slideDown(3000);
-			// });
-			// $('#btnSlideUp').click(function(){
-			// 	$('#box').slideUp(3000);
-			// });
 			$('#eduHideBtn').click(function(){
                 $('#eduDiv').slideToggle(1000);
                 if($('#eduHideBtn').text() == 'Hide') {
@@ -122,6 +108,16 @@
                     $("#eduHideBtn").html("Show");
                 } else {
                     $("#eduHideBtn").html("Hide");
+                }
+                
+            });
+            $('#skillHideBtn').click(function(){
+                $('#skillDiv').slideToggle(1000);
+                if($('#skillHideBtn').text() == 'Hide') {
+                    console.log($('#skillHideBtn').text());
+                    $("#skillHideBtn").html("Show");
+                } else {
+                    $("#skillHideBtn").html("Hide");
                 }
                 
             });
@@ -145,45 +141,6 @@
                 }
                 
 			});
-		// 	$('#btnStop').click(function(){
-		// 		$('#box').stop();
-		// 	});
-
-		// 	$('#moveRight').click(function(){
-		// 		$('#box2').animate({
-		// 			left: 500,
-		// 			height: '300px',
-		// 			width:'300px',
-		// 			opacity: '0.5'
-		// 		});
-		// 	});
-
-		// 	$('#moveLeft').click(function(){
-		// 		$('#box2').animate({
-		// 			left: 0,
-		// 			height: '100px',
-		// 			width: '100px',
-		// 			opacity:'1'
-		// 		});
-		// 	});
-
-		// 	$('#moveAround').click(function(){
-		// 		var box = $('#box2');
-		// 		box.animate({
-		// 			left: 300
-		// 		});
-		// 		box.animate({
-		// 			top: 300
-		// 		});
-		// 		box.animate({
-		// 			left:0,
-		// 			top: 300
-		// 		});
-		// 		box.animate({
-		// 			left: 0,
-		// 			top:0
-		// 		});
-		// 	});
 		});
 	</script>
 </body>

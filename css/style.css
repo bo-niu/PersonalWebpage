@@ -153,3 +153,15 @@ body{
 	overflow:hidden;
 	margin:0 100% 0 0;
 }
+
+
+
+
+
+#skills-left { display: block; float: left; margin-right: 30px; }
+#skills-right { display: block; float: left;}
+.flexDiv {display: flex;}
+
+#eduDiv div{
+	line-height: 200%;
+}
