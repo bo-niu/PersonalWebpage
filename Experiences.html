@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+<head>
+	<title>Bo Niu's Experiences</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+
+		#box{
+			background:#333;
+			color:#fff;
+			width:500px;
+			height:90px;
+			padding:40px;
+			text-align:center;
+		}
+
+		#box2{
+			background:red;
+			width:100px;
+			height:100px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<h1>Bo Niu's Experiences</h1>
+		</div>
+    </header>
+    <nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Experiences.html">Experiences</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+
+        <div class="wrap">
+            <div class="box"><h1>Education</h1></div>
+            <div class="box"><button class="experienceHeaderBtn" id="eduHideBtn"><span>Hide</span></button></div>
+        </div>
+        <hr>
+
+        <div id="eduDiv">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis unde itaque molestiae ipsum consequatur eaque fugit obcaecati quia nam quasi debitis autem, ad odit ab quam, nihil inventore ratione.
+        </div>
+
+        <div class="wrap">
+            <div class="box"><h1>Work Experience</h1></div>
+            <div class="box"><button class="experienceHeaderBtn" id="workHideBtn"><span>Hide</span></button></div>
+        </div>
+        <hr>
+
+        <div id="workDiv">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptates delectus porro, totam, explicabo aliquid accusantium magnam quos ipsum nemo, iusto ut molestias ipsa voluptas sequi modi officiis sit itaque.
+        </div>
+
+        <div class="wrap">
+            <div class="box"><h1>Projects</h1></div>
+            <div class="box"><button class="experienceHeaderBtn" id="projHideBtn" ><span>Hide</span></button></div>
+        </div>
+        <hr>
+        
+        <div id="projDiv">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem at ipsam voluptates nam magni temporibus sed quisquam error expedita, ab iure, praesentium nulla accusamus labore commodi! Illum, minus id!
+        </div>
+
+		<button id="btnFadeOut">Fade Out</button>
+		<button id="btnFadeIn">Fade In</button>
+		<button id="btnFadeTog">Fade Toggle</button>
+
+		<hr>
+
+		<button id="btnSlideUp">Slide Up</button>
+		<button id="btnSlideDown">SlideDown</button>
+		<button id="btnSlideTog">Slide Toggle</button>
+		<button id="btnStop">Stop</button>
+		<hr>
+
+		<div id="box"><h1>Hello World</h1></div>
+
+		<hr>
+
+		<button id="moveLeft">Move Left</button>
+		<button id="moveRight">Move Right</button>
+		<button id="moveAround">Move Around</button>
+		<div id="box2"></div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			// $('#btnFadeOut').click(function(){
+			// 	$('#box').fadeOut(3000, function(){
+			// 		$('#btnFadeOut').text('Its Gone');
+			// 	});
+			// });
+			// $('#btnFadeIn').click(function(){
+			// 	$('#box').fadeIn(3000);
+			// });
+			// $('#btnFadeTog').click(function(){
+			// 	$('#box').fadeToggle(1000);
+			// });
+			// $('#btnSlideDown').click(function(){
+			// 	$('#box').slideDown(3000);
+			// });
+			// $('#btnSlideUp').click(function(){
+			// 	$('#box').slideUp(3000);
+			// });
+			$('#eduHideBtn').click(function(){
+                $('#eduDiv').slideToggle(1000);
+                if($('#eduHideBtn').text() == 'Hide') {
+                    console.log($('#eduHideBtn').text());
+                    $("#eduHideBtn").html("Show");
+                } else {
+                    $("#eduHideBtn").html("Hide");
+                }
+                
+            });
+            $('#workHideBtn').click(function(){
+                $('#workDiv').slideToggle(1000);
+                if($('#workHideBtn').text() == 'Hide') {
+                    console.log($('#workHideBtn').text());
+                    $("#workHideBtn").html("Show");
+                } else {
+                    $("#workHideBtn").html("Hide");
+                }
+                
+            });
+            $('#projHideBtn').click(function(){
+                $('#projDiv').slideToggle(1000);
+                if($('#projHideBtn').text() == 'Hide') {
+                    console.log($('#projHideBtn').text());
+                    $("#projHideBtn").html("Show");
+                } else {
+                    $("#projHideBtn").html("Hide");
+                }
+                
+			});
+		// 	$('#btnStop').click(function(){
+		// 		$('#box').stop();
+		// 	});
+
+		// 	$('#moveRight').click(function(){
+		// 		$('#box2').animate({
+		// 			left: 500,
+		// 			height: '300px',
+		// 			width:'300px',
+		// 			opacity: '0.5'
+		// 		});
+		// 	});
+
+		// 	$('#moveLeft').click(function(){
+		// 		$('#box2').animate({
+		// 			left: 0,
+		// 			height: '100px',
+		// 			width: '100px',
+		// 			opacity:'1'
+		// 		});
+		// 	});
+
+		// 	$('#moveAround').click(function(){
+		// 		var box = $('#box2');
+		// 		box.animate({
+		// 			left: 300
+		// 		});
+		// 		box.animate({
+		// 			top: 300
+		// 		});
+		// 		box.animate({
+		// 			left:0,
+		// 			top: 300
+		// 		});
+		// 		box.animate({
+		// 			left: 0,
+		// 			top:0
+		// 		});
+		// 	});
+		});
+	</script>
+</body>
+</html>
