@@ -165,3 +165,9 @@ body{
 #eduDiv div{
 	line-height: 200%;
 }
+
+
+
+#navbar li :hover {
+	color: goldenrod;
+}
