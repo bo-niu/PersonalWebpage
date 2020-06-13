@@ -176,3 +176,15 @@ body{
 .contactImg:hover {
 	opacity: 0.5;
   }
+
+  .expTable{
+	width:"100%";
+  }
+
+  .expTable tr :hover {
+	background-color:lightgray;
+  }
+
+  .skillList :hover{
+	background-color:lightgray;
+  }

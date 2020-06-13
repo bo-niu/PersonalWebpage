@@ -36,7 +36,7 @@
 
         <div id="eduDiv">
 
-            <table style="width:100%">
+            <table class="expTable">
                 <tr>
                   <td><strong>Master of Science in Computer Science </strong></td>
                   <td><strong>Sep. 2019 – May. 2021 (Expected)</strong></td>
@@ -70,7 +70,7 @@
         <div class="flexDiv" id="skillDiv">
             <section id="skills-left">
 				<h4 itemprop="about">Development</h4>
-				<ul>
+				<ul class="skillList">
 					<li itemprop="itemListElement">HTML5/CSS3</li>
 					<li itemprop="itemListElement">JavaScript &amp; jQuery</li>
 					<li itemprop="itemListElement">Node.js Backend</li>
@@ -84,7 +84,7 @@
 			
 			<section id="skills-right">
 				<h4 itemprop="about">Software and Other</h4>
-				<ul>
+				<ul class="skillList">
 					<li itemprop="itemListElement">Visual Studio Code</li>
 					<li itemprop="itemListElement">Python Jupyter Notebook</li>
                     <li itemprop="itemListElement">Visual Studio</li>
@@ -103,7 +103,7 @@
         <hr>
 
         <div id="workDiv">
-            <table style="width:100%">
+            <table class="expTable">
                 <tr>
                   <td><strong>C++ Software Engineer</strong></td>
                   <td><strong>Dec. 2017 – Jul. 2019</strong></td>
@@ -124,7 +124,7 @@
         <hr>
         
         <div id="projDiv">
-            <table style="width:100%">
+            <table class="expTable">
                 <tr>
                   <td width="80%"><strong>Cat vs. non-cat images classifier using a deep neural network.</strong></td>
                   <td width="20%"><strong>Jun. 2020</strong></td>
@@ -136,50 +136,7 @@
         </div>
 	</div>
 
-	<script>
-		$(document).ready(function(){
-			$('#eduHideBtn').click(function(){
-                $('#eduDiv').slideToggle(1000);
-                if($('#eduHideBtn').text() == 'Hide') {
-                    console.log($('#eduHideBtn').text());
-                    $("#eduHideBtn").html("Show");
-                } else {
-                    $("#eduHideBtn").html("Hide");
-                }
-                
-            });
-            $('#skillHideBtn').click(function(){
-                $('#skillDiv').slideToggle(1000);
-                if($('#skillHideBtn').text() == 'Hide') {
-                    console.log($('#skillHideBtn').text());
-                    $("#skillHideBtn").html("Show");
-                } else {
-                    $("#skillHideBtn").html("Hide");
-                }
-                
-            });
-            $('#workHideBtn').click(function(){
-                $('#workDiv').slideToggle(1000);
-                if($('#workHideBtn').text() == 'Hide') {
-                    console.log($('#workHideBtn').text());
-                    $("#workHideBtn").html("Show");
-                } else {
-                    $("#workHideBtn").html("Hide");
-                }
-                
-            });
-            $('#projHideBtn').click(function(){
-                $('#projDiv').slideToggle(1000);
-                if($('#projHideBtn').text() == 'Hide') {
-                    console.log($('#projHideBtn').text());
-                    $("#projHideBtn").html("Show");
-                } else {
-                    $("#projHideBtn").html("Hide");
-                }
-                
-			});
-		});
-    </script>
+	<script src="javascripts/expHide.js"></script>
     
     <footer id="main-footer">
 		<p>Copyright &copy; 2020 Bo Niu's Website</p>
