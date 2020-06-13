@@ -171,3 +171,8 @@ body{
 #navbar li :hover {
 	color: goldenrod;
 }
+
+
+.contactImg:hover {
+	opacity: 0.5;
+  }
