@@ -3,6 +3,10 @@
 
 Hi, This is my personal website. In short, This website is used to introduce myself. In the `Home` page I have a brief summary of my information. The `Experiences` page contains the detailed information like a resume. The `Contact` page tell others how to connect to me and the `Gallery` page shares some great pictures I took.
 
+Heroku Link:
+
+[Click Me!](https://morning-brushlands-53903.herokuapp.com/)
+
 The requirement of this assignment and what I did are as follows:
 
 * A landing page. 
@@ -20,3 +24,11 @@ The requirement of this assignment and what I did are as follows:
   * Most of the items in my website are interactive. For example, In the `Experiences` page, I had some `Hide` Buttons and some animation effect will appear once clicked. Also, all other buttons and items in the list and table are interactive like some hover effect.
 * Attention to responsiveness. Your site should behave in a reasonable way when viewed on a desktop in a browser, and on a mobile device. 
   * Used CSS media queries in the `Home` page. Tested on the PC and mobile devices and all works okay.
+
+
+### Screenshots
+
+![Home Image](https://github.ccs.neu.edu/NEU-CS5610-SU20/PersonalWebsite-BoNiu/blob/master/screenshots/home.png)
+![Experiences Image](https://github.ccs.neu.edu/NEU-CS5610-SU20/PersonalWebsite-BoNiu/blob/master/screenshots/experiences.png)
+![Contact Image](https://github.ccs.neu.edu/NEU-CS5610-SU20/PersonalWebsite-BoNiu/blob/master/screenshots/contact.png)
+![Gallery Image](https://github.ccs.neu.edu/NEU-CS5610-SU20/PersonalWebsite-BoNiu/blob/master/screenshots/gallery.png)
