@@ -1,5 +1,5 @@
 # PersonalWebsite-BoNiu
-### Summary
+## Summary
 
 Hi, This is my personal website. In short, This website is used to introduce myself. In the `Home` page I have a brief summary of my information. The `Experiences` page contains the detailed information like a resume. The `Contact` page tell others how to connect to me and the `Gallery` page shares some great pictures I took.
 
@@ -11,7 +11,7 @@ The requirement of this assignment and what I did are as follows:
   * I have a navigation bar on the top and a footer at the bottom of each of my webpage, which are easy to navigate. Both are styled in css.
 
 * Two or more internal links. These should be separate pages within your site. 
-    * I have four main tabs in my website, which are `Home`, `Experiences`, `Contact` and `Gallery`. They are tabbed each other.
+  * I have four main tabs in my website, which are `Home`, `Experiences`, `Contact` and `Gallery`. They can be navigated with each other.
 * One or more external links.
   * In the `Contact` page, I have add my linkedin and github links as the external links.
 * At least one HTML table, with CSS styling. 
